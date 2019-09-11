@@ -13,42 +13,57 @@
   href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/b3f5b90c56.js"></script>
+
 <style>
+    body{
+        background-color: whitesmoke;
+        color: white;
+    }
     .form-control {
         width: 15%;
-        background-color: grey;
+        background-color: white;
         color: black;
     }
-    body {
+    .form-group,
+    h3,
+    h2 {
         padding-left: 100px;
-        background-color: tan;
-        color: black;
+       
     }
     #nameInput,
     #imageLinkInput {
         width: 60%;
     }
+    button {
+        width: 80%;
+        margin-left: 140px;
+    }
+  h1{
+      text-align: center;
+  }
+  
 </style>
 
 </head>
-<body>
-    <h1>Survey Questions</h1>
+<body class="alert alert-primary">
+        <h1>Survey Questions</h1>
     <hr>
     <h2>About You</h2>
     <div class="form-group">
             <label for="exampleInputEmail1">Name (Required) </label>
-            <input type="email" class="form-control" id="nameInput" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
-            <input type="password" class="form-control" id="imageLinkInput">
+            <input type="text" class="form-control" id="imageLinkInput">
           </div>
 
     <br>
     <h3>Question 1</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">Your mind is always buzzing with unexplored ideas and plans.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question1">You love going on adventures without any set plans or itenerary.</label>
+            <select class="form-control" id="Question1">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -59,8 +74,8 @@
     <br>
     <h3>Question 2</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">Generally speaking, you rely more on your experience than your imagination.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question2">Generally speaking, you rely more on your experience than your imagination.</label>
+            <select class="form-control" id="Question2">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -71,8 +86,8 @@
     <br>
     <h3>Question 3</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">You find it easy to stay relaxed and focused even when there is some pressure.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question3">You enjoy doing any number of outdoor activities.</label>
+            <select class="form-control" id="Question3">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -83,8 +98,8 @@
     <br>
     <h3>Question 4</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">You rarely do something just out of sheer curiosity.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question4">You almost always have music playing in the background no matter what you are doing.</label>
+            <select class="form-control" id="Question4">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -95,8 +110,8 @@
     <br>
     <h3>Question 5</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">People can rarely upset you.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question5">You enjoy being social and going to dinners and parties.</label>
+            <select class="form-control" id="Question5">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -107,8 +122,8 @@
     <br>
     <h3>Question 6</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">It is often difficult for you to relate to other people’s feelings.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question6">You love getting together and cooking with friends.</label>
+            <select class="form-control" id="Question6">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -119,8 +134,8 @@
     <br>
     <h3>Question 7</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">In a discussion, truth should be more important than people’s sensitivities.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question7">You are a "the more, the merrier" type of person and always like to include people.</label>
+            <select class="form-control" id="Question7">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -131,8 +146,8 @@
     <br>
     <h3>Question 8</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">You rarely get carried away by fantasies and ideas.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question8">You are a person that books flights first and figures everything else out later.</label>
+            <select class="form-control" id="Question8">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -143,8 +158,8 @@
     <br>
     <h3>Question 9</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question9">You are an outgoing person that could basically strike up a converstion with anyone.</label>
+            <select class="form-control" id="Question9">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -155,8 +170,8 @@
     <br>
     <h3>Question 10</h3>
     <div class="form-group">
-            <label for="exampleFormControlSelect1">You feel more energetic after spending time with a group of people.</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="Question10">You are an extremely confident indivual and rarely doubt yourself.</label>
+            <select class="form-control" id="Question10">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -164,10 +179,15 @@
               <option>5(Strongly Agree)</option>
             </select>
           </div>
+         
     <br>
 
 </div>
 
+          <button type="submit" class="btn btn-primary submit" id="submit"><i class="fas fa-check-circle"></i> Submit</button>
+        
+        <br>
+        <hr>
 <footer class="footer">
   <div class="container">
 <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/cblakebovaird/FriendFinder">Github Repo</a>
@@ -180,3 +200,39 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+
+$("#submit").on("click", function(event) {
+    event.preventDefault();
+
+    // Here we grab the form elements
+    var newFriendData = {
+      name: $("#nameInput").val().trim(),
+      photo: $("#imageLinkInput").val().trim(),
+      scores: [ $("#Question1").val().trim(),
+                $("#Question2").val().trim(),
+                $("#Question3").val().trim(),
+                $("#Question4").val().trim(),
+                $("#Question5").val().trim(),
+                $("#Question6").val().trim(),
+                $("#Question7").val().trim(),
+                $("#Question8").val().trim(),
+                $("#Question9").val().trim(),
+                $("#Question10").val().trim(),
+
+      ] 
+    };
+
+    console.log(newFriendData);
+
+    $.post("/api/friends", newFriendData,
+      function(data) {
+
+        
+
+      });
+
+});
+</script>
+
