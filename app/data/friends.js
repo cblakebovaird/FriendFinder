@@ -3,7 +3,7 @@
 // Below data will hold all of the friends data
 // ===============================================================================
 
-var friendsArr = [
+var friends = [
     {
         name: "Blake",
         photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
@@ -23,4 +23,4 @@ var friendsArr = [
   ];
   
   // Exporting the array to make it accessible to other files using require.
-  module.exports = friendsArr;
+  module.exports = friends;
