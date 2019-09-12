@@ -205,13 +205,12 @@
 
 $("#submit").on("click", function(event) {
     event.preventDefault();
-    console.log("this works");
 
     // Here we grab the form elements
     var newFriendData = {
       name: $("#nameInput").val().trim(),
       photo: $("#imageLinkInput").val().trim(),
-      scores: [ $("#Question1").val(),
+      scores: [ parseInt($("#Question1").val()),
                 $("#Question2").val(),
                 $("#Question3").val(),
                 $("#Question4").val(),
@@ -227,9 +226,8 @@ $("#submit").on("click", function(event) {
 
     console.log(newFriendData);
 
-    $.post("/api/friends", newFriendData)
-    .then(function(data) {
-        console.log("friends.html", data);
+    $.post("/api/friends", newFriendData , function(data) {
+        console.log("this works");
       
         
 

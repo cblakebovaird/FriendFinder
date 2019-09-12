@@ -28,7 +28,20 @@ module.exports = function(app) {
     // ---------------------------------------------------------------------------
   
     app.post("/api/friends", function(req, res) {
+     console.log("this works");
+     var newFriendData = req.body;
+
+     console.log(newFriendData);
      
+     friends.push(newFriendData);
+
+     
+
+     for (var i =0; i < friends.length; i++){
+
+     }
+
+
     });
   
   };
