@@ -31,14 +31,22 @@ module.exports = function(app) {
      console.log("this works");
      var newFriendData = req.body;
 
-     console.log(newFriendData);
+    //  console.log(newFriendData.scores);
      
      friends.push(newFriendData);
 
-     
+      scoresInt = [];
 
      for (var i =0; i < friends.length; i++){
+       scoresArr = friends[i].scores;
+       for (var i=0; i<scoresArr.length; i++){
+         scoresInt.push(parseInt(scoresArr[i]));
 
+          
+       }
+       
+      
+    console.log(scoresInt);
      }
 
 

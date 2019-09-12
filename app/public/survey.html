@@ -52,11 +52,11 @@
     <h2>About You</h2>
     <div class="form-group">
             <label for="exampleInputEmail1">Name (Required) </label>
-            <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp">
+            <input type="text" class="form-control" id="nameInput" required>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
-            <input type="text" class="form-control" id="imageLinkInput">
+            <input type="text" class="form-control" id="imageLinkInput" required>
           </div>
 
     <br>
@@ -206,6 +206,17 @@
 $("#submit").on("click", function(event) {
     event.preventDefault();
 
+    function completeSurvey () {
+      var isComplete = true;
+      $(".form-control").each(function(){
+        if($(this).val()=== ""){
+          isComplete = false;
+        }
+      });
+      return isComplete;
+    }
+    if (completeSurvey()){
+
     // Here we grab the form elements
     var newFriendData = {
       name: $("#nameInput").val().trim(),
@@ -232,7 +243,9 @@ $("#submit").on("click", function(event) {
         
 
       });
-
+    }else {
+      alert("Please fill out all fields before submitting!");
+    }
 });
 </script>
 
